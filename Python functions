@@ -1,0 +1,33 @@
+import math
+
+jul = (78,90,45,10000, 100095,3)
+
+firstname = "Elizabeth"
+lastname = "Morvey"
+print(f"Hello, {firstname} {lastname}")
+print(f"The biggest number in Jul is {max(jul)}")
+print(f"The smallest number in Jul is {min(jul)}")
+
+#total sale
+quantity = 10
+price = 30
+
+print("Total sales")
+print(f"Total: ${quantity*price:,}")
+print(f"Total: ${quantity * price:,.2f}")
+
+#sales tax
+sale_tax = 0.003
+print(f"Sale Tax Rate is: {sale_tax:.2%}")
+unit_price = 46.99
+quantity =10
+sales_tax_rate = 0.065
+subtotal = quantity*unit_price
+sales_tax = sales_tax_rate * subtotal
+total = subtotal + sales_tax
+output = f"""
+Subtotal:       ${subtotal:,.2f}
+Sales Tax:      ${sales_tax:,.2f}
+Total:          ${total:,.2f}
+"""
+print(output)
